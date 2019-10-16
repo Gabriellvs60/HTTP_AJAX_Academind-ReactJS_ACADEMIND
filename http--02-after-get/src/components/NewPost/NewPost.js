@@ -17,7 +17,7 @@ class NewPost extends Component {
             author: this.state.author
         }
         //201 indica sucesso response log
-        axios.post('https://jsonplaceholder.typicode.com/posts',data)
+        axios.post('/posts',data)
         .then(response => {
             console.log(response);
         })
